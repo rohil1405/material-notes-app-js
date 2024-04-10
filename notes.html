@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header">
+                <i id='icon' class="material-icons" id="folder">folder</i>
+                <span id="title1">Material Note App</span>
+                <!-- <input type="checkbox" id="darkmode"/>
+                <label for="darkmode-toggle"></label> -->
+                <p id="darkmode">Light/Dark</p>
+        </div>
+    </header>
+
+    <form id="mydiv">
+        <input id='input' type="name" placeholder="Title" />
+    </form>
+    <div id="list"></div>
+    <hr>
+    <div id="data">
+        <div id="notes">
+            <p id="title"><strong id="title">Your Notes</strong></p>
+        </div>
+        <div id="searchDiv">
+            <input id="searchInput" type="text"  oninput="searchNotes()" placeholder="Search your notes...">
+        </div>
+    </div>
+
+    <hr>
+    <div id="details"></div>
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <input type="text" id="taskInput" placeholder="Title"><br><br>
+            <textarea id="detailsInput" placeholder="Description"></textarea><br>
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+    
+    <script src="notes.js"></script>
+</body>
+</html>
